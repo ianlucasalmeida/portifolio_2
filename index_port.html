@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-10 dark:bg-gray-800">
+    <div class="container mx-auto p-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold">Arquitetura Plus!</a>
+      <div class="flex items-center">
+       
+        <button id="menu-btn" class="ml-4 md:hidden text-gray-900 dark:text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <nav id="menu" class="hidden md:flex space-x-4">
+        <ul class="flex flex-col md:flex-row md:space-x-4">
+          <li><a href="#home" class="hover:text-gray-600 dark:hover:text-gray-400">Home</a></li>
+          <li><a href="#about" class="hover:text-gray-600 dark:hover:text-gray-400">Sobre Mim</a></li>
+          <li><a href="#portfolio" class="hover:text-gray-600 dark:hover:text-gray-400">Portfolio</a></li>
+          <li><a href="#contact" class="hover:text-gray-600 dark:hover:text-gray-400">Contato</a></li>
+        </ul>
+        
+      </nav>
+    </div>
+    <nav id="mobile-menu" class="hidden bg-white shadow-md md:hidden">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="#home" class="block text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white">Home</a></li>
+        <li><a href="#about" class="block text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white">Sobre Mim</a></li>
+        <li><a href="#portfolio" class="block text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white">Portfolio</a></li>
+        <li><a href="#contact" class="block text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container mx-auto px-4">
+
+    <!-- Home -->
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.adsttc.com/media/images/6712/d44f/3dfd/b442/1af4/2ea1/slideshow/146-residential-building-pragmatica-architectural-design-studio_2.jpg?1729287296');">
+      <div class="text-center text-white">
+        <h1 class="text-4xl font-bold">Ian Lucas - Arquiteto e Paisagista</h1>
+        <p class="mt-4">Transformando ideias em realidade</p>
+        <a href="#about" class="mt-8 inline-block bg-gray-900 text-white px-6 py-3 rounded-full hover:bg-gray-700">Saiba Mais</a>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full md:w-1/2">
+            <h2 class="text-3xl font-bold">Sobre Mim</h2>
+            <p class="mt-4 text-gray-600">Sou um arquiteto apaixonado por inovação, busco o melhor para os projetos
+              estando sempre antenado com o que há de mais moderno no mercado. Estes são alguns dos projetos que apresento-lhes
+              aqui, espero que gostem!
+            </p><hr>
+            <div class="mt-6 flex space-x-4">
+              <i class="fab fa-photoshop text-4xl"></i>
+              <i class="fab fa-illustrator text-4xl"></i>
+              <i class="fab fa-html5 text-4xl"></i>
+              
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 mt-8 md:mt-0">
+            <img src="https://images.adsttc.com/media/images/6716/c157/2aec/2b3e/5093/8164/slideshow/edificio-teodoro-garcia-bas-plus-oszurkiewicz_8.jpg?1729544549" alt="Residencial em Yalta" class="rounded-lg shadow-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio  -->
+    <section id="portfolio" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center">Portfolio</h2>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://www.galeriadaarquitetura.com.br/img/projeto/702x415/555/habitarte421.jpg" alt="Project 1" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">Residencial Visão do Futuro.</h3>
+              <p class="mt-4 text-gray-600">Mais uma torre para chineses no centro do Recife, valorizando o que já existe e especulando ainda mais o mercado imobiliário.</p>
+              <a href="https://www.galeriadaarquitetura.com.br/projeto/aflalogasperini-arquitetos/habitarte/555" class="mt-6 inline-block text-indigo-600 hover:text-indigo-800">Ver mais</a>
+            </div>
+          </div>
+          
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://images.adsttc.com/media/images/670f/2164/2aec/2b01/7c36/0cd7/slideshow/jungle-gym-void_17.jpg?1729044887" alt="Project 1" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">Verde exclusivo, verde!</h3>
+              <p class="mt-4 text-gray-600">Seja discreto e vá morar em uma casa dentro dos matos em Aldeia dos Camarás, onde você poderá estar em contato com a fauna e a flora local.</p>
+              <a href="https://www.archdaily.com.br/br/1022415/academia-floresta-void?ad_content=1022415&ad_medium=widget&ad_name=featured_loop_main" class="mt-6 inline-block text-indigo-600 hover:text-indigo-800">Ver mais</a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://images.adsttc.com/media/images/6716/a2c2/6509/0f00/018c/54a5/slideshow/TAPAS6.jpg?1729536762" alt="Project 1" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">Cobogos são a verdadeira arte.</h3>
+              <p class="mt-4 text-gray-600">Um projeto descolado que vai deixar o cliente com a mensagem de 'eu penso no bairrismo, mas moro no Poço da Panela'.</p>
+              <a href="https://www.archdaily.com.br/br/1022779/edificio-residencial-tapas-a-arte-de-viver-o-presente-fahed-plus-architects" class="mt-6 inline-block text-indigo-600 hover:text-indigo-800">Ver mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center">Contato</h2>
+        <div class="mt-10 flex flex-wrap justify-center">
+          <div class="w-full md:w-1/2 lg:w-1/3">
+            <form action="#" method="POST" class="bg-gray-100 p-8 rounded-lg shadow-lg">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700">Nome</label>
+                <input type="text" id="name" name="name" class="mt-2 w-full p-3 bg-white rounded border border-gray-300 focus:outline-none focus:border-indigo-500">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700">Email</label>
+                <input type="email" id="email" name="email" class="mt-2 w-full p-3 bg-white rounded border border-gray-300 focus:outline-none focus:border-indigo-500">
+              </div>
+              <div class="mb-4">
+                <label for="subject" class="block text-gray-700">Assunto</label>
+                <input type="text" id="subject" name="subject" class="mt-2 w-full p-3 bg-white rounded border border-gray-300 focus:outline-none focus:border-indigo-500">
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-gray-700">Mensagem</label>
+                <textarea id="message" name="message" rows="4" class="mt-2 w-full p-3 bg-white rounded border border-gray-300 focus:outline-none focus:border-indigo-500"></textarea>
+              </div>
+              <button type="submit" class="w-full bg-indigo-600 text-white p-3 rounded hover:bg-indigo-500">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center p-4">
+    <p>&copy; 2024 Ian Lucas Almeida. Todos os direitos reservados.</p>
+    <script>
+      // Alternância de Menu
+      document.getElementById('menu-btn').addEventListener('click', function() {
+        var menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      });
+  
+    </script>
+</body>
+</html>
+
