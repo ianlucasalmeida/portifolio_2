@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ian Almeida - Portfólio</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <style>
+    /* Cores escuras para abas */
+    .nav-link {
+      color: #444 !important;
+    }
+    .nav-link:hover {
+      color: #111 !important;
+    }
+    /* Cards de portfólio com estilo sóbrio */
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    /* Estilo para preview de thumb */
+    .card-img-top {
+      object-fit: cover;
+      height: 200px;
+    }
+    /* Footer fixo ao final da página */
+    footer {
+      background-color: #333;
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      padding-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navegação -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ian Almeida - Portfólio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Mim</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Seção Home -->
+<section id="home" class="container mt-5">
+  <h1>Ian Lucas Almeida</h1>
+  <p>Descubra minha trajetória e os projetos que desenvolvi nas áreas de Biologia, Técnico em Edificações e Desenvolvimento de Software.</p>
+</section>
+
+<!-- Seção Sobre Mim -->
+<section id="sobre" class="container mt-5">
+  <h2>Sobre Mim</h2>
+  <p>Sou um profissional versátil com formação em Ciências Biológicas, Técnico em Edificações e atualmente cursando Análise e Desenvolvimento de Sistemas. Minha experiência abrange desde a pesquisa científica em ciências naturais até a criação de soluções técnicas em construção civil e desenvolvimento de software.</p>
+  
+  <!-- Guías para as áreas -->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="biologo-tab" data-bs-toggle="tab" href="#biologo" role="tab" aria-controls="biologo" aria-selected="true">Biólogo</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="tecnico-tab" data-bs-toggle="tab" href="#tecnico" role="tab" aria-controls="tecnico" aria-selected="false">Técnico em Edificações</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="desenvolvedor-tab" data-bs-toggle="tab" href="#desenvolvedor" role="tab" aria-controls="desenvolvedor" aria-selected="false">Desenvolvedor</a>
+    </li>
+  </ul>
+  
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="biologo" role="tabpanel" aria-labelledby="biologo-tab">
+      <p>Com experiência em pesquisas no Centro Regional de Ciências Nucleares do Nordeste, foquei em análises ambientais e controle de fauna, como anfíbios e répteis, contribuindo com estudos durante a pandemia de COVID-19.</p>
+    </div>
+    <div class="tab-pane fade" id="tecnico" role="tabpanel" aria-labelledby="tecnico-tab">
+      <p>Atuei na área de edificações, desenvolvendo projetos de construção e infraestrutura, com proficiência em ferramentas como AutoCAD e ArcGIS, e também projetos com foco em acessibilidade e sustentabilidade.</p>
+    </div>
+    <div class="tab-pane fade" id="desenvolvedor" role="tabpanel" aria-labelledby="desenvolvedor-tab">
+      <p>Tenho experiência em desenvolvimento web e mobile, incluindo a criação de interfaces interativas e aplicações que aliam tecnologia e design intuitivo para resolver problemas reais, com foco em React Native e soluções escaláveis.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Seção Portfólio -->
+<section id="portfolio" class="container mt-5">
+  <h2>Meu Portfólio</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://github.com/ianlucasalmeida/WeatherApp/raw/main/thumbnail.png" class="card-img-top" alt="WeatherApp"> <!-- Link para a thumbnail -->
+        <div class="card-body">
+          <h5 class="card-title">WeatherApp</h5>
+          <p class="card-text">Aplicativo para acompanhamento da temperatura e previsão do tempo para diferentes cidades, desenvolvido com React Native.</p>
+          <a href="https://github.com/ianlucasalmeida/WeatherApp" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+        </div>
+      </div>
+    </div>
+    <!-- Adicione mais cards conforme necessário -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://github.com/ianlucasalmeida/WeatherApp/raw/main/thumbnail.png" class="card-img-top" alt="WeatherApp"> <!-- Link para a thumbnail -->
+        <div class="card-body">
+          <h5 class="card-title">WeatherApp</h5>
+          <p class="card-text">Aplicativo para acompanhamento da temperatura e previsão do tempo para diferentes cidades, desenvolvido com React Native.</p>
+          <a href="https://github.com/ianlucasalmeida/WeatherApp" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://github.com/ianlucasalmeida/WeatherApp/raw/main/thumbnail.png" class="card-img-top" alt="WeatherApp"> <!-- Link para a thumbnail -->
+        <div class="card-body">
+          <h5 class="card-title">WeatherApp</h5>
+          <p class="card-text">Aplicativo para acompanhamento da temperatura e previsão do tempo para diferentes cidades, desenvolvido com React Native.</p>
+          <a href="https://github.com/ianlucasalmeida/WeatherApp" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seção Contato -->
+<section id="contato" class="container mt-5">
+  <h2>Contato</h2>
+  <form>
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nome" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="mensagem" class="form-label">Mensagem</label>
+      <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+
+  <!-- Redes Sociais e Currículo -->
+  <div class="mt-5">
+    <h3>Redes Sociais e Currículo</h3>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="https://github.com/ianlucasalmeida" target="_blank"><i class="fa fa-github fa-2x"></i> GitHub</a></li>
+      <li class="list-inline-item"><a href="https://www.linkedin.com/in/ian-lucas-almeida" target="_blank"><i class="fa fa-linkedin fa-2x"></i> LinkedIn</a></li>
+      <li class="list-inline-item"><a href="http://lattes.cnpq.br/1234401152559873" target="_blank"><i class="fa fa-file-text fa-2x"></i> Currículo Lattes</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-white text-center py-4">
+  <p>&copy; 2024 Ian Lucas Almeida - Todos os direitos reservados</p>
+  <p><a href="#home" class="text-white text-decoration-none">Voltar ao topo</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
